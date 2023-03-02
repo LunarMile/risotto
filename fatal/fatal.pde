@@ -1,4 +1,5 @@
 Table data;
+int maxDate = 0;
 
 PImage map;
 PImage mapB;
@@ -25,25 +26,37 @@ void setup() {
 
 void draw() {
   translate(width/2, height/2);
-  fill(255);
+
   noStroke();
+  textSize(32);
 
-  for (int i = 0; i < data.getRowCount()-1; i++) {
-    TableRow dataRow = data.getRow(i+1);
-    float lat = dataRow.getFloat(15);
-    float lon = dataRow.getFloat(16);
-
-    float fy = mercY(lat);
-    float fx = mercX(lon);
-
-    println(fx + ",  " + fy);
-    ellipse(fx, fy, 2, 2);
-  }
-  saveFrame("result1.png");
-  noLoop();
-  
+  TableRow readRow = data.getRow(((data.getRowCount()-1) - frameCount) % (data.getRowCount()-1));
+  String date = readRow.getString(8);
+  fill(0);
+  rect(10 -width/2, 30 - height/2, 170, 40);
+  fill(255);
+  text(date, 20 - width/2, 60 - height/2);
+  datePoints(date);
 }
 
+
+void datePoints(String date) {
+
+  if (dateID(date) > maxDate) {
+    maxDate = dateID(date);
+    for (TableRow loadRow : data.findRows(date, 8)) {
+      float lat = loadRow.getFloat(15);
+      float lon = loadRow.getFloat(16);
+
+      float fy = mercY(lat);
+      float fx = mercX(lon);
+
+      println(fx + ",  " + fy + ",  " + dateID(date));
+
+      ellipse(fx, fy, 2, 2);
+    }
+  }
+}
 // Longitude to x  (WEBMercator)
 float mercX(float lon) {
   lon = radians(lon);
@@ -60,4 +73,14 @@ float mercY(float lat) {
   float b = tan(PI / 4 + lat / 2);
   float c = PI - log(b);
   return (a * c) - cY;
+}
+
+
+int dateID(String date) {
+  String[] split = splitTokens(date, "/");
+  int dd = int(split[1]);
+  int mm = int(split[0]) * 100;
+  int yyyy = int(split[2]) * 10000;
+
+  return yyyy + mm + dd;
 }
