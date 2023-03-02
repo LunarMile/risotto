@@ -6,7 +6,7 @@
         <entry key="/resources/seg_high_place.csv">
           <value>
             <Attribute>
-              <option name="separator" value="," />
+              <option name="separator" value=";" />
             </Attribute>
           </value>
         </entry>
