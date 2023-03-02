@@ -1,4 +1,3 @@
-# fusilli
+# Fatal Encounters With Police from 1/1/2000 to 12/31/2021
 
-The start of the first project w/ LunarMile 
-
+A Processing visualization
