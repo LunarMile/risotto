@@ -1,0 +1,120 @@
+Rank;City;State;Divergence;Segregation Category;Population
+1;Detroit;MI;806;High Segregation;639111
+2;Newark;NJ;0.6806;High Segregation;311549
+3;Hialeah;FL;654;High Segregation;233109
+4;Chicago;IL;0.6223;High Segregation;2746388
+5;Milwaukee;WI;0.5936;High Segregation;577222
+6;Cleveland;OH;0.5478;High Segregation;372624
+7;New York;NY;0.4379;High Segregation;8804190
+8;Irving;TX;0.4082;High Segregation;256684
+9;Miami;FL;0.4074;High Segregation;422241
+10;St. Louis;MO;0.4069;High Segregation;301578
+11;Philadelphia;PA;0.3974;High Segregation;1603797
+12;Dalla;TX;0.3968;High Segregation;1304379
+13;Irvine;CA;0.3876;High Segregation;307670
+14;Santa Ana;CA;0.3762;High Segregation;310227
+15;Atlanta;GA;363;High Segregation;498715
+16;Oakland;CA;0.3572;High Segregation;440646
+17;Memphis;TN;0.3453;High Segregation;633104
+18;Buffalo;NY;0.3362;High Segregation;278349
+19;Baltimore;MD;0.3335;High Segregation;585708
+20;Boston;MA;0.3333;High Segregation;675647
+21;Fremont;CA;0.3297;High Segregation;230504
+22;Washington;DC;0.3295;High Segregation;689545
+23;New Orleans;LA;0.3226;High Segregation;383997
+24;Houston;TX;0.3187;High Segregation;2304580
+25;Los Angeles;CA;0.3088;High Segregation;3898747
+26;Cincinnati;OH;0.3006;High Segregation;309317
+27;Jersey City;NJ;0.2953;High Segregation;292449
+28;St. Paul;MN;0.2949;High Segregation;311527
+29;Orlando;FL;0.2877;High Segregation;307573
+30;Baton Rouge;LA;0.2817;High Segregation;227470
+31;Little Rock;AR;0.2813;High Segregation;202591
+32;Richmond;VA;0.2794;High Segregation;226610
+33;Tampa;FL;0.2787;High Segregation;384959
+34;Kansas City;MO;0.2754;High Segregation;508090
+35;Frisco;TX;0.2743;High Segregation;200509
+36;Plano;TX;0.2689;High Segregation;285494
+37;Indianapolis;IN;0.2538;High Segregation;887642
+38;Chula Vista;CA;0.2522;High Segregation;275487
+39;San Diego;CA;0.2514;High Segregation;1386932
+40;Phoenix;AZ;0.2429;High Segregation;1608139
+41;Charlotte;NC;0.2347;High Segregation;874579
+42;St. Petersburg;FL;0.2278;High Segregation;258308
+43;Scottsdale;AZ;0.2241;High Segregation;241361
+44;Fort Worth;TX;0.2232;High Segregation;918915
+45;Omaha;NE;0.2229;High Segregation;486051
+46;Yonkers;NY;0.2207;High Segregation;211569
+47;Huntsville;AL;0.2206;High Segregation;215006
+48;Minneapolis;MN;0.2206;High Segregation;429954
+49;Pittsburgh;PA;0.2195;High Segregation;302971
+50;Rochester;NY;0.2182;High Segregation;211328
+51;Montgomery;AL;0.2135;High Segregation;200603
+52;Oklahoma City;OK;0.2119;High Segregation;681054
+53;Tulsa;OK;0.2118;High Segregation;413066
+54;Columbus;OH;0.2088;High Segregation;905748
+55;Long Beach;CA;0.2077;High Segregation;466742
+56;Greensboro;NC;0.2055;High Segregation;299035
+57;Nashville;TN;203;High Segregation;689447
+58;Denver;CO;0.1971;High Segregation;715522
+59;Columbus;GA;0.1893;High Segregation;206922
+60;North Las Vegas;NV;0.1888;High Segregation;262527
+61;Raleigh;NC;0.1878;High Segregation;467665
+62;Norfolk;VA;0.1858;High Segregation;238005
+63;San Jose;CA;0.1852;High Segregation;1013240
+64;Winston-Salem;NC;0.1851;High Segregation;249545
+65;Garland;TX;0.1811;High Segregation;246018
+66;San Francisco;CA;0.1797;High Segregation;873965
+67;Louisville;KY;0.1783;High Segregation;633045
+68;Aurora;CO;0.1756;Low-Medium Segregation;386261
+69;Sacramento;CA;0.1731;Low-Medium Segregation;524943
+70;Jacksonville;FL;0.1705;Low-Medium Segregation;949611
+71;McKinney;TX;0.1698;Low-Medium Segregation;195308
+72;Durham;NC;0.1686;Low-Medium Segregation;283506
+73;Amarillo;TX;0.1678;Low-Medium Segregation;200393
+74;San Bernardino;CA;0.1673;Low-Medium Segregation;222101
+75;Toledo;OH;0.1661;Low-Medium Segregation;270871
+76;Austin;TX;0.1613;Low-Medium Segregation;961855
+77;Fort Wayne;IN;161;Low-Medium Segregation;263886
+78;Lubbock;TX;0.1572;Low-Medium Segregation;257141
+79;Fontana;CA;153;Low-Medium Segregation;208393
+80;Augusta;GA;151;Low-Medium Segregation;202081
+81;Arlington;TX;0.15;Low-Medium Segregation;394266
+82;Glendale;AZ;0.1487;Low-Medium Segregation;248325
+83;Virginia Beach;VA;0.1487;Low-Medium Segregation;459470
+84;Wichita;KS;0.1485;Low-Medium Segregation;397532
+85;Las Vegas;NV;144;Low-Medium Segregation;641903
+86;San Antonio;TX;0.1411;Low-Medium Segregation;1434625
+87;Tucson;AZ;0.1406;Low-Medium Segregation;542629
+88;Stockton;CA;0.1402;Low-Medium Segregation;320804
+89;Anaheim;CA;0.14;Low-Medium Segregation;346824
+90;Bakersfield;CA;0.1318;Low-Medium Segregation;403455
+91;Fresno;CA;0.1289;Low-Medium Segregation;542107
+92;Des Moines;IA;0.1284;Low-Medium Segregation;214133
+93;Chandler;AZ;0.1276;Low-Medium Segregation;275987
+94;Moreno Valley;CA;0.1253;Low-Medium Segregation;208634
+95;Chesapeake;VA;0.1181;Low-Medium Segregation;249422
+96;Lexington;KY;0.1166;Low-Medium Segregation;322570
+97;Mesa;AZ;0.1146;Low-Medium Segregation;504258
+98;Tacoma;WA;0.1135;Low-Medium Segregation;219346
+99;Henderson;NV;0.1111;Low-Medium Segregation;317610
+100;Corpus Christi;TX;0.1075;Low-Medium Segregation;317863
+101;Seattle;WA;0.1043;Low-Medium Segregation;737015
+102;Worcester;MA;0.0999;Low-Medium Segregation;206518
+103;Riverside;CA;0.0967;Low-Medium Segregation;314998
+104;Albuquerque;NM;0.0966;Low-Medium Segregation;564559
+105;Reno;NV;0.0908;Low-Medium Segregation;264165
+106;Gilbert;AZ;0.0879;Low-Medium Segregation;267918
+107;Fayetteville;NC;0.0853;Low-Medium Segregation;208501
+108;Modesto;CA;0.0812;Low-Medium Segregation;218464
+109;Madison;WI;0.0812;Low-Medium Segregation;269840
+110;Anchorage;AK;0.0775;Low-Medium Segregation;291247
+111;Portland;OR;0.0683;Low-Medium Segregation;652503
+112;El Paso;TX;0.0644;Low-Medium Segregation;678815
+113;Colorado Springs;CO;0.0531;Integrated;478961
+114;Lincoln;NE;0.0464;Low-Medium Segregation;291082
+115;Cape Coral;FL;0.0379;Low-Medium Segregation;194016
+116;Boise;ID;0.0379;Low-Medium Segregation;235684
+117;Port St. Lucie;FL;27;Integrated;204851
+118;Spokane;WA;0.0219;Low-Medium Segregation;223989
+119;Laredo;TX;0.0109;Low-Medium Segregation;255205
