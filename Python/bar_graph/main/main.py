@@ -23,6 +23,14 @@ botCities = list(segTail['City'])
 # [270554, ..., ...]
 botPopulations = list(segTail['Population'])
 
+topD = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+# | | | |
+topR = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+# same old... v
+botD = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+# | | | |
+botR = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
 # Figure adjustments, formatting basically
 fig, axs = plt.subplots(2, 2)
 fig.autofmt_xdate(rotation=45)
@@ -57,31 +65,25 @@ for ax in fig.get_axes():
 
 # Animation loop
 def animate(i, topC, botC):
-    topD = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-    # | | | |
-    topR = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-    # same old... v
-    botD = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-    # | | | |
-    botR = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-    # Initialize num deaths per city
-    for location in locations[i:]:
+    global botD
+    global botR
+    global topD
+    global topR
+    # Combines 'New York' and 'New York City' entries
+    if locations[i] == 'New York City':
+        locations[i] = 'New York'
 
-        # Combines 'New York' and 'New York City' entries
-        if location == 'New York City':
-            location = 'New York'
+    # Increments topDeath index of corresponding topCity
+    if locations[i] in topC:
+        index = topC.index(locations[i])
+        topD[index] += 1
+        topR[index] += (1/topPopulations[index]) * 200000
 
-        # Increments topDeath index of corresponding topCity
-        if location in topC:
-            index = topC.index(location)
-            topD[index] += 1
-            topR[index] += (1/topPopulations[index]) * 200000
-
-        # Increments botDeath index of corresponding botCity
-        if location in botC:
-            index = botC.index(location)
-            botD[index] += 1
-            botR[index] += (1/botPopulations[index]) * 200000
+    # Increments botDeath index of corresponding botCity
+    if locations[i] in botC:
+        index = botC.index(locations[i])
+        botD[index] += 1
+        botR[index] += (1/botPopulations[index]) * 200000
 
     # Plot the bars
     axs[0, 0].bar(topC, topD, color='#7dcff4')
@@ -92,6 +94,23 @@ def animate(i, topC, botC):
     # add overall title and adjust it so that it doesn't overlap with subplot titles
     fig.suptitle(dates[i])
     fig.savefig('./pics/{}.png'.format(str(str(dates[i]).split('/'))), bbox_inches='tight')
+def draw(i, topC, botC):
+
+    # Combines 'New York' and 'New York City' entries
+    if locations[i] == 'New York City':
+        locations[i] = 'New York'
+
+    # Increments topDeath index of corresponding topCity
+    if locations[i] in topC:
+        index = topC.index(locations[i])
+        topD[index] += 1
+        topR[index] += (1/topPopulations[index]) * 200000
+
+    # Increments botDeath index of corresponding botCity
+    if locations[i] in botC:
+        index = botC.index(locations[i])
+        botD[index] += 1
+        botR[index] += (1/botPopulations[index]) * 200000
 
 
 # Main method, goes over locations backwards and only creates a frame when the days are complete <3
@@ -103,6 +122,7 @@ if __name__ == '__main__':
         date = dates[i]
 
         if date == prevDate:
+            draw(i, topCities, botCities)
             i -= 1
 
         else:
