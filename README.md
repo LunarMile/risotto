@@ -10,7 +10,7 @@ The start of the first project w/ LunarMile
 
 
 
-# Data Sources
+# sources
 
 ## *The Roots of Structural Racism (seg_per_city.csv)*
 
