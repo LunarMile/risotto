@@ -19,4 +19,4 @@ US Census Bureau. (2023, January 25). City and Town Population Totals: 2020-2021
 
 https://fatalencounters.org/
 
-(Might be braindead but I'm not sure how to site this ^)
+(Might be braindead but I'm not sure how to cite this ^)
