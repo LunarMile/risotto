@@ -1,3 +1,4 @@
+# type: ignore [reportUnknownMemberType]
 # Imports
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -31,7 +32,6 @@ botPopulations = list(segTail['Population'])
 botDeaths = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 # | | | |
 botRatio = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-
 
 
 # Figure adjustments, formatting basically
@@ -73,8 +73,8 @@ for ax in fig.get_axes():
 # Animation loop
 def animate(i):
     # Combines 'New York' and 'New York City' entries
-    if locations[i] == 'New York City':
-        locations[i] = 'New York'
+    if locations[i] == 'New York':
+        locations[i] = 'New York City'
 
     # Increments topDeath index of corresponding topCity
     if locations[i] in topCities:
@@ -121,7 +121,7 @@ def draw(i):
 
 
 # Main method, goes over locations backwards and only creates a frame when the days are complete <3
-if __name__ == '__main__':
+def main():
     prevDate = ""
     i = len(locations) - 1
 
@@ -138,3 +138,7 @@ if __name__ == '__main__':
             animate(i)
             prevDate = date
             i -= 1
+
+
+if __name__ == '__main__':
+    main()
