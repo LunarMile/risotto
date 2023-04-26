@@ -41,17 +41,20 @@ fig.tight_layout(h_pad=2)
 fig.patch.set_facecolor('#e7e7e7')
 plt.subplots_adjust(top=.80)
 
+for ax in fig.get_axes():
+    ax.label_outer()
 
-axs[0, 0].set_title('Fatal Encounters With Police'
-                    '\nin the Ten Most'
-                    '\nRacially Segregated Cities')
+
+axs[0, 0].set_title('Fatal Encounters With Police\n'
+                    'in the Ten Most\n'
+                    'Racially Segregated Cities')
 axs[0, 0].set_ylim([0, 500])
 axs[0, 0].set_facecolor('#ffffff')
 rects1 = axs[0, 0].bar(topCities, topDeaths, color='#7dcff4')
 
-axs[0, 1].set_title('Fatal Encounters With Police'
-                    '\nin the Ten Least'
-                    '\nRacially Segregated Cities')
+axs[0, 1].set_title('Fatal Encounters With Police\n'
+                    'in the Ten Least\n'
+                    'Racially Segregated Cities')
 axs[0, 1].set_ylim([0, 500])
 axs[0, 1].set_facecolor('#ffffff')
 rects2 = axs[0, 1].bar(botCities, botDeaths, color='#d2b9c3')
@@ -65,10 +68,6 @@ axs[1, 1].set_title('per 200k Inhabitants')
 axs[1, 1].set_ylim([0, 150])
 axs[1, 1].set_facecolor('#ffffff')
 rects4 = axs[1, 1].bar(botCities, botRatio, color='#8c747c')
-
-for ax in fig.get_axes():
-    ax.label_outer()
-
 
 # Animation loop
 def animate(i):
